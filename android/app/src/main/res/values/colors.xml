@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Same palette as the iPhone page. -->
+    <color name="bg">#FF121214</color>
+    <color name="fg">#FFF4F4F5</color>
+    <color name="muted">#FFA1A1AA</color>
+    <color name="accent">#FFF59E42</color>
+    <color name="accent_fg">#FF1A1205</color>
+    <color name="ready">#FF22C55E</color>
+    <color name="live">#FFEF4444</color>
+    <color name="live_text">#FFFCA5A5</color>
+    <color name="problem_text">#FFFCD34D</color>
+    <color name="idle">#FF71717A</color>
+</resources>

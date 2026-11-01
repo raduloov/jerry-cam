@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One glanceable status: a glowing paw and a word, readable from across the room. Problems show in the bottom banner. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageButton android:id="@+id/menu" android:layout_width="56dp" android:layout_height="56dp"
+        android:layout_gravity="top|end" android:layout_margin="4dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_more" android:contentDescription="@string/menu" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="center" android:orientation="vertical" android:gravity="center_horizontal"
+        android:paddingHorizontal="24dp" android:paddingBottom="48dp">
+
+        <FrameLayout android:id="@+id/glow" android:layout_width="260dp" android:layout_height="260dp">
+            <ImageView android:id="@+id/paw" android:layout_width="150dp" android:layout_height="150dp"
+                android:layout_gravity="center" android:src="@drawable/ic_paw" android:importantForAccessibility="no" />
+        </FrameLayout>
+
+        <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/fg" android:textSize="44sp" android:textStyle="bold" android:letterSpacing="0.02" />
+
+        <TextView android:id="@+id/detail" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:gravity="center"
+            android:textColor="@color/muted" android:textSize="20sp" />
+
+        <Button android:id="@+id/action" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" android:minWidth="200dp" android:minHeight="56dp"
+            android:paddingHorizontal="28dp" android:background="@drawable/button_accent"
+            android:stateListAnimator="@null" android:textAllCaps="false"
+            android:textColor="@color/accent_fg" android:textSize="18sp" android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/banner" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="bottom" android:orientation="vertical"
+        android:background="@color/accent" android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true" android:focusable="true"
+        android:paddingHorizontal="24dp" android:paddingVertical="18dp">
+
+        <TextView android:id="@+id/bannerTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/accent_fg" android:textSize="18sp" android:textStyle="bold" />
+
+        <TextView android:id="@+id/bannerDetail" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/accent_fg" android:textSize="15sp" />
+    </LinearLayout>
+</FrameLayout>

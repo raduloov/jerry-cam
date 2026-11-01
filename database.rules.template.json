@@ -1,0 +1,14 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "camera": {
+      ".read": "auth != null && (__EMAIL_ALLOWED__) && auth.token.email_verified === true",
+      ".write": "auth != null && (__EMAIL_ALLOWED__) && auth.token.email_verified === true"
+    },
+    "session": {
+      ".read": "auth != null && (__EMAIL_ALLOWED__) && auth.token.email_verified === true",
+      ".write": "auth != null && (__EMAIL_ALLOWED__) && auth.token.email_verified === true"
+    }
+  }
+}

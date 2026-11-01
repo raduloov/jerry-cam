@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jerry Cam</string>
+    <string name="channel_name">Jerry Cam</string>
+    <string name="notify_ready">Jerry Cam is ready</string>
+    <string name="notify_live">Live: someone is watching</string>
+    <string name="notify_live_viewer">Live: %1$s is watching</string>
+    <string name="notify_offline">Jerry Cam is offline, reconnecting…</string>
+    <string name="notify_sign_in">Open Jerry Cam to sign in</string>
+    <string name="notify_wrong_account">Wrong Google account — open Jerry Cam</string>
+    <string name="notify_restart">Tap to restart Jerry Cam</string>
+
+    <string name="mood_welcome">Jerry Cam</string>
+    <string name="mood_welcome_detail">Sign in once to turn this phone into Jerry\'s camera.</string>
+    <string name="mood_problem">Can\'t start</string>
+    <string name="mood_stopped">Stopped</string>
+    <string name="mood_stopped_detail">Nobody can watch until you start it.</string>
+    <string name="mood_starting">Starting…</string>
+    <string name="mood_offline">Offline</string>
+    <string name="mood_offline_detail">Reconnecting…</string>
+    <string name="mood_ready">Ready</string>
+    <string name="mood_live">● Live</string>
+    <string name="mood_live_viewer">%1$s is watching</string>
+    <string name="mood_live_someone">Someone is watching</string>
+    <string name="battery_charging">⚡ %1$d%%</string>
+    <string name="battery_level">%1$d%%</string>
+
+    <string name="sign_in">Sign in with Google</string>
+    <string name="start">Start</string>
+
+    <string name="fix_switch_account">This Google account isn\'t allowed</string>
+    <string name="fix_switch_account_detail">Tap to sign in with the right one.</string>
+    <string name="fix_camera_and_mic">Camera or microphone isn\'t allowed</string>
+    <string name="fix_notifications">Notifications are off</string>
+    <string name="fix_battery">Battery saving can stop Jerry Cam</string>
+    <string name="fix_battery_detail">Tap to let it run in the background.</string>
+    <string name="fix_tap_to_allow">Tap to allow it.</string>
+
+    <string name="menu">More</string>
+    <string name="menu_switch_account">Switch account</string>
+    <string name="menu_stop">Stop Jerry Cam</string>
+    <string name="menu_start">Start Jerry Cam</string>
+    <string name="menu_restart_on">Restart after reboot: on</string>
+    <string name="menu_restart_off">Restart after reboot: off</string>
+</resources>

@@ -1,0 +1,16 @@
+{
+  "name": "jerry-cam",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:web": "node --test 'web/test/*.test.mjs'",
+    "rules": "node scripts/render-rules.mjs",
+    "test:rules": "firebase emulators:exec --config firebase.test.json --only database --project demo-jerry-cam \"node --test 'tests/rules/*.test.mjs'\"",
+    "deploy": "npm run rules && firebase deploy --only hosting,database"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "6.0.0",
+    "firebase": "13.1.0",
+    "firebase-tools": "15.34.1"
+  }
+}

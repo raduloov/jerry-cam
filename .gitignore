@@ -1,0 +1,26 @@
+node_modules/
+.superpowers/
+*.log
+
+# secrets and per-machine config
+.env.local
+database.rules.json
+android/local.properties
+android/app/google-services.json
+android/keystore.properties
+android/*.jks
+web/public/js/firebase-config.js
+
+# Android build output
+android/.gradle/
+android/.kotlin/
+android/build/
+android/app/build/
+android/.idea/
+
+# your own Firebase project and deploy cache
+.firebaserc
+.firebase/
+
+# planning notes kept local
+docs/superpowers/

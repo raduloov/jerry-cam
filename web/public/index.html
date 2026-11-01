@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Jerry Cam">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#121214">
+  <title>Jerry Cam</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <video id="video" playsinline autoplay></video>
+  <main id="panel">
+    <img src="icons/icon-180.png" alt="" width="72" height="72">
+    <h1>Jerry Cam</h1>
+    <p id="message"></p>
+    <button id="primary" type="button" hidden></button>
+    <button id="secondary" type="button" class="quiet" hidden></button>
+  </main>
+  <span id="battery" hidden></span>
+  <div id="live" hidden>
+    <span id="pill">Live</span>
+    <div class="controls">
+      <button id="sound" type="button" aria-pressed="true" aria-label="Sound">🔊</button>
+      <button id="talk" type="button">Hold to talk</button>
+      <button id="flash" type="button" hidden aria-pressed="false" aria-label="Light">🔦</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "web/public",
+    "ignore": ["**/.*"],
+    "headers": [{ "source": "**", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }]
+  },
+  "database": { "rules": "database.rules.json" },
+  "emulators": {
+    "database": { "port": 9000 },
+    "ui": { "enabled": false }
+  }
+}

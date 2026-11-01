@@ -1,0 +1,7 @@
+{
+  "database": { "rules": "tests/rules/placeholder.rules.json" },
+  "emulators": {
+    "database": { "port": 9000 },
+    "ui": { "enabled": false }
+  }
+}
